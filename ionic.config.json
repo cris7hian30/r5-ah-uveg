@@ -1,0 +1,7 @@
+{
+  "name": "R5",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
