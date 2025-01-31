@@ -5,12 +5,7 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: 'AIzaSyDghW-H2icDDb-omlRht-LHqFeDO7dVfBM',
-    authDomain: 'r5-uveg.firebaseapp.com',
-    projectId: 'r5-uveg',
-    storageBucket: 'r5-uveg.firebasestorage.app',
-    messagingSenderId: '490500592741',
-    appId: '1:490500592741:web:a100583e8bf90dd74e628c',
+    
   }
 };
 
