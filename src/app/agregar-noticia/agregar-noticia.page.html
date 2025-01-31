@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Noticia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="agregarNoticia()">
+    <ion-item>
+      <ion-label position="floating">Título</ion-label>
+      <ion-input type="text" [(ngModel)]="newNoticia.titulo" name="titulo" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-input type="date" [(ngModel)]="newNoticia.fecha" name="fecha" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descripción</ion-label>
+      <ion-textarea [(ngModel)]="newNoticia.descripcion" name="descripcion" required></ion-textarea>
+    </ion-item>
+    <ion-button expand="full" type="submit">Agregar</ion-button>
+  </form>
+</ion-content>

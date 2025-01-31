@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let noticia of noticias$ | async">
+    <img src="https://picsum.photos/1920/1080" alt="Imagen de la noticia" />
+
+    <ion-card-header>
+      <ion-card-title>{{ noticia.titulo }}</ion-card-title>
+      <ion-card-subtitle>{{ noticia.fecha }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ noticia.descripcion }}
+    </ion-card-content>
+
+    <ion-button expand="full" color="danger" (click)="eliminarNoticia(noticia.id)">
+      Eliminar
+    </ion-button>
+  </ion-card>
+</ion-content>
